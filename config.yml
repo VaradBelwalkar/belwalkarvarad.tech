@@ -1,0 +1,150 @@
+baseURL: http://belwalkarvarad.tech/
+languageCode: en-us
+title: "Varad Belwalkar"
+theme: ["PaperMod", "plausible-hugo"]
+paginate: 200000
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+enableGitInfo: true
+
+# googleAnalytics: G-VC68GQDE93
+
+# disqusShortname: belwalkarvarad
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+
+related:
+  includeNewer: true
+  indices:
+  - name: categories
+    weight: 40
+  - name: tags
+    weight: 60
+  threshold: 90
+  toLower: false
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: "Varad Belwalkar"
+    description: "Official blogpost website"
+    keywords: [Varad, Belwalkar, Blog, Portfolio, Resume]
+    author: "Varad Belwalkar"
+    DateFormat: "January 2, 2006"
+    defaultTheme: dark # dark, light, auto
+    disableThemeToggle: true
+
+    mainSections: ['posts']
+    dailySections: ['daily']
+    mermaid:
+      theme: "dark"
+      align: "center"
+
+    plausible:
+      enable: true
+      domain: "belwalkarvarad.tech"
+      proxy_netlify: true
+      outbound_link: true
+      gitstar: false
+
+    ShowReadingTime: true
+    ShowLastMod: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowWordCount: false
+    ShowRssButtonInSectionTermList: true
+    UseHugoToc: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    images: ["images/preview.png","Varad Belwalkar", "http://belwalkarvarad.tech/"]
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Welcome"
+        Content:
+          Intro: Find tutorials and HowTos on various topics here.
+          About: I mostly write tutorials and HowTos on various topics whenever I find time.
+          Action: Feel free to request any new blog on any topic (mail me), I will try to cover that as soon as possible.
+
+    subscribeInfo:
+      Text: If you liked this post, check out my [featured posts](/categories/featured) or learn more [about me](/about).
+
+    socialIcons:
+        - name: email
+          url: "mailto:belwalkarvarad@gmail.com"
+        - name: github
+          url: "https://github.com/VaradBelwalkar"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/varadbelwalkar/"
+        - name: twitter
+          url: "https://twitter.com/belwalkarvarad"
+        - name: rss
+          url: /index.xml
+    
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: false # hide on single page
+
+    editPost:
+        URL: "https://github.com/VaradBelwalkar"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.1
+        minMatchCharLength: 0
+        limit: 5
+        keys: ["title", "permalink", "summary", "content", "categories"]
+menu:
+    main:
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 20
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 30
+        - identifier: daily
+          name: Daily Logs
+          url: /dailies/
+          weight: 40
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 50
+        - identifier: subscribe
+          name: Subscribe
+          url: /subscribe/
+          weight: 60
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary

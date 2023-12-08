@@ -1,0 +1,33 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+    {{- $date := .Date.Format (default "January 2, 2006" site.Params.DateFormat) -}}
+    {{- $scratch.Add "meta" (slice (printf "%s" $date)) }}
+{{- end }}
+
+{{- $date := .Date.Format "02.01.2006" -}}
+{{- $lastmod := .Lastmod.Format "02.01.2006" -}}
+
+{{- if (.Param "ShowLastMod") -}}
+    {{- if .GitInfo -}}
+        {{- if in .GitInfo.Subject "update site" -}}
+            {{- if ne $lastmod $date -}}
+                {{- $lastmodFormatted := .Lastmod.Format (default "January 2, 2006" .Site.Params.DateFormat) -}}
+                {{- $scratch.Add "meta" (slice (printf "Updated On %s" $lastmodFormatted)) }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+    {{- $readingTime := i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime) -}}
+    {{- $scratch.Add "meta" (slice $readingTime) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+    {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+    {{- . -}}
+{{- end -}}

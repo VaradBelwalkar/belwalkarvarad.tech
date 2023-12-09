@@ -14,7 +14,6 @@ I write about a [wide range of topics](/categories/), from in-depth [tutorials f
 ## About Me
 
 I am currently a Final year student, and love backend and DevOps.
-I work full-time in maintaining [Apache APISIX](https://github.com/apache/apisix). Formerly, I maintained two [CNCF](https://en.wikipedia.org/wiki/Cloud_Native_Computing_Foundation) projects.
 
 I enjoy travelling, exploring new places and having fun there 😃
 I enjoy goinn on mountains, nature 🌴 🌲

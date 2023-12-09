@@ -16,19 +16,19 @@ MySQL authentication can be intricate, especially when running scripts or progra
 
 When using MySQL with `sudo` privileges:
 
-```
+```shell
 sudo mysql
 ```
 
 Being a superuser grants direct access to the `root` account without requesting a password. However, attempting to log in manually without `sudo`:
 
-```
+```shell
 mysql
 ```
 
 Results in a permission denied error. Even providing the correct password for the `root` account:
 
-```
+```shell
 mysql -u root -p
 ```
 
@@ -39,7 +39,7 @@ To resolve this challenge, change the authentication plugin to `mysql_native_pas
 
 Now, you can successfully execute:
 
-```
+```shell
 mysql -u root -p
 ```
 Simply provide the password, and access is granted. This solution also ensures remote or programmatic interactions work seamlessly.

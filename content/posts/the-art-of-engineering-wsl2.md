@@ -14,7 +14,7 @@ categories: ["windows"]
 
 The reason why you can run powershell.exe from WSL 2 is because WSL 2 supports running Windows executables directly from the Linux command line. This is a feature of the WSL 2 architecture, which allows the Linux kernel to communicate with the Windows host through a special interface called 9P. 9P is a network protocol that enables file system and network operations to be performed across the virtual machine boundary.
 
-When you run a Windows executable from WSL 2, such as powershell.exe, the following steps happen:
+When you run a Windows executable from WSL 2, such as `powershell.exe`, the following steps happen:
 
 - WSL 2 checks if the executable has the .exe extension and is on the PATH environment variable. If not, it returns an error message.
 - WSL 2 invokes the /init binary, which is the provisional binfmt_misc “interpreter” for the Windows executables. binfmt_misc is a Linux facility that allows launching binaries with arbitrary formats

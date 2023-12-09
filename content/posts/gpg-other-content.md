@@ -13,14 +13,14 @@ categories: ["Linux","Cryptography"]
 ## Symmetric keys
 
 To encrypt the file with passphrase:
-```
+```shell
 gpg --symmetric file_to_encrypt
 ```
 This will prompt you for the passphrase to enter to encrypt the file,  
 To strongly encrypt, create first a symmetric key and use this as passphrase  
 
 To decrypt simply run, and give passphrase when prompted:  
-```
+```shell
 gpg --decrypt file_to_decrypt
 ```   
 Here gpg will know whether to use symmetric or asymmtric decryption here
@@ -37,23 +37,23 @@ This approach not only ensures the legitimacy of key ownership but also safeguar
 
 
 To send the publickey to the key-server:
-```
+```shell
 gpg --keyserver <keyserverurl> --send-keys <fingerprint>
 ```
 
 For example:
-```
+```shell
 gpg --keyserver hkps://keys.openpgp.org --send-keys <fingerprint>
 ```
           
 Now to search for a key on keyserver: (NOTE: Reflection of uploaded publickey takes some time)
-```
+```shell
 gpg --keyserver hkps://keys.openpgp.org --search-keys <username or email>
 ```
 
 Once you find the key on the keyserver, along with the metadata, it will also show the fingerprint for that key,
 So to download that public key:
-```
+```shell
 gpg --keyserver hkps://keys.openpgp.org --recv-keys <fingerprint>
 ```
 
@@ -68,21 +68,21 @@ so you can change above url to, [hkp://pgp.mit.edu]
 
 To edit the key expiration date, 
 run:
-```
+```shell
 gpg --edit-key <key fingerprint or name or email>
 ```      
 You will get gpg prompt
-```
+```shell
 gpg> 
 ```
 run expire
-```
+```shell
 gpg> expire
 ```
 and then choose option
 make sure to run save
 
-```
+```shell
 gpg> save
 ```
 
@@ -94,7 +94,7 @@ DONE
 ## Multiple Recipents
 
 When you run the following command:
-```    
+```shell    
 gpg --encrypt --recipent <recipent name or email as per pubkey> file_to_encrypt
 ```
 
@@ -102,7 +102,7 @@ here there is only single recipient, so the gpg will directly encrypt the file w
 
 
 but supppose you give multiple recipients like this:
-```
+```shell
 gpg --encrypt --recipient <r1> --recipient <r2> --recipient <r3> file_to_encrypt
 ```
 
@@ -116,12 +116,12 @@ Here the gpg first, creates a symmetric key and encrypts the file, and then encr
 ## Signing and Verification
 
 To sign a file
-```
+```shell
 gpg --sign file
 ```
 
 To verify a file
-```
+```shell
 gpg --verify file
 ```
 

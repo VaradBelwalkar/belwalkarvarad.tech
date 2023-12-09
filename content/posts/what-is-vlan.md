@@ -10,7 +10,7 @@ categories: ["VLAN","Networking"]
 ---
 
 
-VLAN are inevitable in today's world for the companies, why?
+### VLAN are inevitable in today's world for the companies, why?
 
 Before answering why, let me tell what does VLAN mean in the first place,
 
@@ -52,7 +52,7 @@ here you just not only need to indentify the traffic's network, but also need to
 pcs in the network, this is rediculous and time consuming and not scalable and if you are allocating ips with DHCP, then it is going to be really
 hard,
 
-So what is the solution?
+### So what is the solution?
 
 The solution is really simple, it is not only cost effective, only requires switches and not routers, and also minimizes broadcast domains
 and also help us to talk certain pcs to only certain pcs and not all,

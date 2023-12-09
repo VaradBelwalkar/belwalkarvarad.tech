@@ -41,7 +41,7 @@ params:
     keywords: [Varad, Belwalkar, Blog, Portfolio, Resume]
     author: "Varad Belwalkar"
     DateFormat: "January 2, 2006"
-    defaultTheme: dark # dark, light, auto
+    defaultTheme: light # dark, light, auto
     disableThemeToggle: true
 
     mainSections: ['posts']
@@ -122,9 +122,9 @@ params:
         keys: ["title", "permalink", "summary", "content", "categories"]
 menu:
     main:
-        - identifier: archives
-          name: Archives
-          url: /archives/
+        - identifier: posts
+          name: Posts
+          url: /posts/
           weight: 20
         - identifier: categories
           name: Categories

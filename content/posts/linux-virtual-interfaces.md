@@ -24,14 +24,14 @@ Scenario is,
 
 
 But When you create a bridge using the command,
-```
+```shell
 ip link add my-bridge type bridge
 ```
 
 You are actually creating a virtual switch, and not virtual interface, 
 and when you run this command,
 
-```
+```shell
 ip link set eth0 master my-bridge
 ```
 

@@ -11,7 +11,7 @@ categories: ["tmux","Configuration","Productivity"]
 
 
 ## Following is the tmux.conf file I normally use
-```
+```t
 # Bind Alt+j to move to the previous window
 bind-key -n M-j select-window -p
 

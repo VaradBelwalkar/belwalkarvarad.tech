@@ -19,8 +19,8 @@ I enjoy travelling, exploring new places and having fun there 😃
 I enjoy goinn on mountains, nature 🌴 🌲
 
 ### Resume
-[resume]( http://belwalkarvarad.tech/resume/varadbelwalkar_latest.pdf)
-Here is my resume, please do share feedback by mailing me.
+
+Here is my [resume]( http://belwalkarvarad.tech/resume/varadbelwalkar_latest.pdf), please do share feedback by mailing me.
 
 
 ### Github

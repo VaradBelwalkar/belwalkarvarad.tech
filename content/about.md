@@ -15,7 +15,7 @@ description: "Discover the world through my blog and insights."
 
 ### Resume 📄
 
-Check out my [resume](http://belwalkarvarad.tech/resume/varadbelwalkar_latest.pdf), and feel free to share your feedback with me.
+Check out my [resume](https://belwalkarvarad.tech/resume/varadbelwalkar_latest.pdf), and feel free to share your feedback with me.
 
 ### Github 🐙
 

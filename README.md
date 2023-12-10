@@ -1,6 +1,6 @@
 # Blog/Portfolio Website
 
-A static blog/portfolio website built using Hugo. [[See Live](http://belwalkarvarad.tech)]
+A static blog/portfolio website built using Hugo. [[See Live](https://belwalkarvarad.tech)]
 
 Built on top of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 

@@ -1,4 +1,4 @@
-baseURL: http://belwalkarvarad.tech/
+baseURL: https://belwalkarvarad.tech/
 languageCode: en-us
 title: "Varad Belwalkar"
 theme: ["PaperMod", "plausible-hugo"]
@@ -74,7 +74,7 @@ params:
     showtoc: false
     tocopen: false
 
-    images: ["images/preview.png","Varad Belwalkar", "http://belwalkarvarad.tech/"]
+    images: ["images/preview.png","Varad Belwalkar", "https://belwalkarvarad.tech/"]
 
     # home-info mode
     homeInfoParams:

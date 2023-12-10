@@ -81,7 +81,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 {{- /* Search */}}
-{{- if or (eq .Layout `search`) (eq .Layout `archives`) (eq .Layout `dailies`) -}}
+{{- if or (eq .Layout `search`) (eq .Layout `posts`) (eq .Layout `dailies`) -}}
 <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
 {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
 {{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
@@ -97,7 +97,7 @@
 
 {{- /* Highlight.js */}}
 {{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default .Params.disableHLJS ) }}
-{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isHLJSdisabled)) }}
+{{- if (and (eq .Kind "page") (ne .Layout "posts") (ne .Layout "search") (not $isHLJSdisabled)) }}
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $highlight := slice (resources.Get "js/highlight.min.js") | resources.Concat "assets/js/highlight.js" | fingerprint }}
 <script defer crossorigin="anonymous" src="{{ $highlight.RelPermalink }}" integrity="{{ $highlight.Data.Integrity }}"

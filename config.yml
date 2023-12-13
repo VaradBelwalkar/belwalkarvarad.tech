@@ -78,11 +78,11 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "Welcome"
+        Title: "Welcome 🌟"
         Content:
-          Intro: Find tutorials and HowTos on various topics here.
-          About: I mostly write tutorials and HowTos on various topics whenever I find time.
-          Action: Feel free to request any new blog on any topic (mail me), I will try to cover that as soon as possible.
+          Intro: Find tutorials and HowTos on various topics here. 🚀 Explore the world of knowledge and innovation with our informative content.
+          About: I mostly write tutorials and HowTos on various topics whenever I find time. 📚 My goal is to share insights and help you learn something new!
+          Action: Feel free to request any new blog on any topic (mail me), and I will try to cover that as soon as possible. 📬 Your suggestions drive the content creation journey!
 
     subscribeInfo:
       Text: If you liked this post, check out my [featured posts](/categories/featured) or learn more [about me](/about).

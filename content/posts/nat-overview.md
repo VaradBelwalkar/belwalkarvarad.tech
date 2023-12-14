@@ -1,6 +1,6 @@
 ---
 title: "How does NAT work?"
-date: 2023-05-05T09:15:19+05:30
+date: 2023-02-10T09:15:19+05:30
 draft: false
 ShowToc: false
 ShowRelatedContent: true

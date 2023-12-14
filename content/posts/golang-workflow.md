@@ -1,6 +1,6 @@
 ---
 title: "How Go handles packages?"
-date: 2023-05-05T09:15:19+05:30
+date: 2022-10-19T09:15:19+05:30
 draft: false
 ShowToc: false
 ShowRelatedContent: true

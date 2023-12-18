@@ -1,0 +1,79 @@
+---
+title: "Redis CLI commands"
+date: 2023-04-11T09:15:19+05:30
+draft: false
+ShowToc: false
+ShowRelatedContent: true
+summary: "List of useful redis-cli commands"
+tags: ["Redis", "Commands"]
+categories: ["Redis"]
+---
+
+## Comprehensive list of redi-cli Commands.
+
+### Basic Commands
+
+```
+SET key value
+GET key
+DEL key [key ...]
+EXISTS key
+KEYS pattern
+TTL key
+EXPIRE key seconds
+PERSIST key
+RANDOMKEY
+FLUSHDB
+FLUSHALL
+RENAME oldkey newkey
+TYPE key
+```
+### String Commands
+
+```
+SET key value
+GET key
+MSET key value [key value ...]
+MGET key [key ...]
+INCR key
+DECR key
+APPEND key value
+```
+### Hash Commands
+
+```
+HSET key field value
+HGET key field
+HMSET key field value [field value ...]
+HMGET key field [field ...]
+HDEL key field [field ...]
+HGETALL key
+```
+
+### List 
+```
+LPUSH key value [value ...]
+RPUSH key value [value ...]
+LPOP key
+RPOP key
+LLEN key
+LRANGE key start stop
+```
+### Set Commands
+```
+SADD key member [member ...]
+SREM key member [member ...]
+SMEMBERS key
+SISMEMBER key member
+```
+
+### Configuration
+```
+CONFIG GET parameter
+CONFIG SET parameter value
+```
+
+### Authentication
+```
+AUTH password
+```

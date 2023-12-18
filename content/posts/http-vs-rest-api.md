@@ -9,7 +9,7 @@ tags: ["API","Comparision"]
 categories: ["API","REST","HTTP"]
 ---
 
-# HTTP API vs REST API
+## HTTP API vs REST API
 
 **HTTP API (Application Programming Interface)** and **REST API (Representational State Transfer API)** are terms frequently used in the context of web development to describe different approaches to building and consuming APIs. While HTTP is a protocol that defines how data is transmitted over the web, REST is an architectural style that uses HTTP as its communication protocol. Let's explore the differences between HTTP API and REST API:
 

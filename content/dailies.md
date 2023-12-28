@@ -8,8 +8,7 @@ summary: "dailies"
 
 Upcoming Posts:
 - Kubernetes the hard way.
-- Deep Dive into DNS.
-- NAT vs PAT.
+- Docker-deep-dive
 
 
 

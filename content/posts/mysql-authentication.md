@@ -9,10 +9,10 @@ tags: ["MySQL"]
 categories: ["MySQL"]
 ---
 
-## Understanding MySQL Authentication
+## Understanding MySQL Authentication 🛡️
 MySQL authentication can be intricate, especially when running scripts or programmatically connecting to the MySQL instance. The complexity arises from MySQL's use of authentication plugins to verify the user interacting with the MySQL daemon.
 
-### Authentication Plugin Challenges
+### Authentication Plugin Challenges 🤔
 
 When using MySQL with `sudo` privileges:
 
@@ -34,7 +34,7 @@ mysql -u root -p
 
 Leads to permission denied issues. This is because the default authentication mechanism for the root account is set to auth_socket (Unix socket). Consequently, accessing `/var/run/mysql.sock` is necessary for authentication, which normal user can't.
 
-### Authentication Plugin Switch
+### Authentication Plugin Switch 🔄
 To resolve this challenge, change the authentication plugin to `mysql_native_password`. This plugin authenticates based on the password, independent of machine privileges or local/remote execution.
 
 Now, you can successfully execute:
@@ -64,4 +64,4 @@ After updating the authentication plugin, reload the grant tables and apply the 
 ```sql
 FLUSH PRIVILEGES;
 ```
-This approach ensures a smooth MySQL authentication experience, making it accessible via various methods while maintaining security measures.
+This approach ensures a smooth MySQL authentication experience, making it accessible via various methods while maintaining security measures. 🚀

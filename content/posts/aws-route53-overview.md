@@ -10,7 +10,7 @@ categories: ["AWS","Networking"]
 ---
 
 First and Foremost, if you didn't read my [DNS deep dive](https://belwalkarvarad.tech/posts/dns-deep-dive/),
-I highly recommend you read that before coming here.I am going to , but if you know how everything in DNS works right from Registration to updation of NS Records to TLD servers, then you are good to go :).
+I highly recommend you read that before coming here.I am going to refer lots of things from there, but if you know how everything in DNS works right from Registration to updation of NS Records to TLD servers, then you are good to go :).
 
 **AWS Route53** is a service provided by AWS to manage zone files for our registered domains.
 

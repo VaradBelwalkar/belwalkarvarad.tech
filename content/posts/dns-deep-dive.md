@@ -16,7 +16,7 @@ Like how domain is registered in the first place that it becomes available to cu
  
 So this blog post will cover everything that I came accross to with my learning, and I hope you like it.
 
-Following are the topics being covered in this 
+Following are the topics being covered in this:
 - How DNS Resolution works?
 - How Domain Registration works?
 
